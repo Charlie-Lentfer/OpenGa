@@ -1,11 +1,7 @@
-# OpenGa pinned dependencies (reproducibility release)
-# Backend (openga/) needs only numpy; the rest are UI / tooling / tests.
-numpy==1.26.4
-
-# Interim UI (app/)
-streamlit==1.37.1
-pandas==2.2.2
-
-# Tests + baseline builder (tools/)
-pytest==8.2.2
-openpyxl==3.1.5
+# Runtime dependencies. Version floors chosen so prebuilt wheels exist on
+# modern Python (3.11-3.14). Tested/locked versions noted in comments.
+numpy>=1.26          # tested: 1.26.4
+pandas>=2.0          # tested: 2.2.2
+streamlit>=1.37      # tested: 1.37.1
+openpyxl>=3.1        # tested: 3.1.5  (tests / baseline builder only)
+pytest>=8.0          # tested: 8.2.2  (tests only)

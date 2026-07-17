@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openga"
+version = "0.1.0"
+description = "Open techno-economic & carbon model for gallium recovery from Bayer liquor"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Charlie Lentfer" }]
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.30", "pandas>=2.0"]
+test = ["pytest>=8.0", "openpyxl>=3.1"]
+
+[project.scripts]
+openga = "openga.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["openga*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,11 @@
+# OpenGa pinned dependencies (reproducibility release)
+# Backend (openga/) needs only numpy; the rest are UI / tooling / tests.
+numpy==1.26.4
+
+# Interim UI (app/)
+streamlit==1.37.1
+pandas==2.2.2
+
+# Tests + baseline builder (tools/)
+pytest==8.2.2
+openpyxl==3.1.5

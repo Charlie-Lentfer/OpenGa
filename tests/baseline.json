@@ -1,0 +1,55 @@
+{
+  "_source": {
+    "wp3": "WP3_Balance_v3_3.xlsx",
+    "wp4": "Ga_Financial_Model_WP4_v2.xlsx"
+  },
+  "meb": {
+    "throughput_t": 48.8515378124806,
+    "electricity_kwh": 143.558198923213,
+    "thermal_kwh": 20.2458333333333,
+    "overall_recovery": 0.258361553975,
+    "steam_kg": 32.25,
+    "h2so4_kg": 65.5261891467122,
+    "naoh_kg": 96.5342381064046,
+    "cao_kg": 2,
+    "hcl_kg": 0.012,
+    "resin_kg": 3,
+    "fresh_water_kg": 4146.97293567774,
+    "salty_reject_kg": 194.666666666667,
+    "solid_residue_kg": 2.4
+  },
+  "carbon": {
+    "s1_s2": 77.7296814508387,
+    "with_embodied": 215.408729374987,
+    "luo_gwp_china_grid": 225.457803299612
+  },
+  "finance": {
+    "fci": 493917117.856623,
+    "working_capital": 6433324.40566131,
+    "opex_variable": 17782559.0675274,
+    "opex_fixed": 25106270.303548,
+    "opex_total": 42888829.3710754,
+    "cmpti_eligible_base": 20662559.0675274,
+    "pv_depreciation": 204301261.890711,
+    "lcop_pretax": 831.421662401105,
+    "mvp": 933.376375003167
+  },
+  "wesselkaemper": {
+    "lcop_base": 434.17806306955,
+    "capital_component": 252.90806306955,
+    "lcop_s1": 685.040181733133,
+    "lcop_s2": 585.66736404721,
+    "lcop_grant": 299.020747684921,
+    "targets": {
+      "base": 421.98,
+      "capital": 240.71,
+      "s1": 663.97,
+      "s2": 568.11,
+      "grant": 291.6
+    }
+  },
+  "breakeven": {
+    "50": 944.817920459689,
+    "100": 933.700192327408
+  }
+}

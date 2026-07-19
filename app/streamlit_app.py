@@ -10,6 +10,9 @@ Run:  streamlit run app/streamlit_app.py
 """
 from __future__ import annotations
 
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from dataclasses import replace
 
 import pandas as pd

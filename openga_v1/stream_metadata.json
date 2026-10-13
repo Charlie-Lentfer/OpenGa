@@ -1,0 +1,267 @@
+{
+  "basis": "kg per kg of 4N gallium product",
+  "streams": [
+    {
+      "id": "S1",
+      "description": "Bayer liquor slipstream",
+      "source": "Refinery",
+      "target": "UP1",
+      "cls": "physical"
+    },
+    {
+      "id": "S2",
+      "description": "Filter residue to refinery",
+      "source": "UP1",
+      "target": "Refinery",
+      "cls": "physical"
+    },
+    {
+      "id": "S3",
+      "description": "Clarified liquor",
+      "source": "UP1",
+      "target": "UP2",
+      "cls": "physical"
+    },
+    {
+      "id": "S4",
+      "description": "Ga-depleted liquor return",
+      "source": "UP2",
+      "target": "Refinery",
+      "cls": "physical"
+    },
+    {
+      "id": "S5",
+      "description": "Loaded resin",
+      "source": "UP2",
+      "target": "UP3",
+      "cls": "resin-cycle state"
+    },
+    {
+      "id": "S6",
+      "description": "Wash water",
+      "source": "UP4",
+      "target": "UP3",
+      "cls": "physical"
+    },
+    {
+      "id": "S7",
+      "description": "Wash waste",
+      "source": "UP3",
+      "target": "Refinery",
+      "cls": "physical"
+    },
+    {
+      "id": "S8",
+      "description": "Washed loaded resin",
+      "source": "UP3",
+      "target": "UP5",
+      "cls": "resin-cycle state"
+    },
+    {
+      "id": "S9",
+      "description": "98% w/w H2SO4",
+      "source": "Reagent",
+      "target": "UP4",
+      "cls": "physical"
+    },
+    {
+      "id": "S10",
+      "description": "Raw water intake",
+      "source": "Utility",
+      "target": "UP4",
+      "cls": "physical"
+    },
+    {
+      "id": "S11",
+      "description": "Water treatment reject",
+      "source": "UP4",
+      "target": "Disposal",
+      "cls": "physical"
+    },
+    {
+      "id": "S12",
+      "description": "Acid mist to absorption",
+      "source": "UP4",
+      "target": "Vent",
+      "cls": "physical"
+    },
+    {
+      "id": "S13",
+      "description": "Prepared eluant, 4% w/w H2SO4",
+      "source": "UP4",
+      "target": "UP5",
+      "cls": "physical"
+    },
+    {
+      "id": "S14",
+      "description": "Metal-bearing eluate",
+      "source": "UP5",
+      "target": "UP7",
+      "cls": "physical"
+    },
+    {
+      "id": "S15",
+      "description": "Resin to regeneration",
+      "source": "UP5",
+      "target": "UP6",
+      "cls": "resin-cycle state"
+    },
+    {
+      "id": "S16",
+      "description": "Regeneration water",
+      "source": "UP4",
+      "target": "UP6",
+      "cls": "physical"
+    },
+    {
+      "id": "S17",
+      "description": "Fresh resin make-up",
+      "source": "Reagent",
+      "target": "UP6",
+      "cls": "physical"
+    },
+    {
+      "id": "S18",
+      "description": "Regeneration wastewater",
+      "source": "UP6",
+      "target": "Disposal",
+      "cls": "physical"
+    },
+    {
+      "id": "S19",
+      "description": "Spent resin",
+      "source": "UP6",
+      "target": "Disposal",
+      "cls": "physical"
+    },
+    {
+      "id": "S20",
+      "description": "NaOH solution, 32% w/w",
+      "source": "Reagent",
+      "target": "UP7",
+      "cls": "physical"
+    },
+    {
+      "id": "S21",
+      "description": "Precipitation slurry",
+      "source": "UP7",
+      "target": "UP8",
+      "cls": "physical"
+    },
+    {
+      "id": "S22",
+      "description": "Centrate to refinery",
+      "source": "UP8",
+      "target": "Refinery",
+      "cls": "physical"
+    },
+    {
+      "id": "S23",
+      "description": "Wet Ga(OH)3 cake",
+      "source": "UP8",
+      "target": "UP9",
+      "cls": "physical"
+    },
+    {
+      "id": "S24",
+      "description": "NaOH solution, 32% w/w",
+      "source": "Reagent",
+      "target": "UP9",
+      "cls": "physical"
+    },
+    {
+      "id": "S25",
+      "description": "CaO",
+      "source": "Reagent",
+      "target": "UP9",
+      "cls": "physical"
+    },
+    {
+      "id": "S25b",
+      "description": "UP9 make-up water",
+      "source": "UP4",
+      "target": "UP9",
+      "cls": "physical"
+    },
+    {
+      "id": "S26",
+      "description": "Condensate",
+      "source": "UP9",
+      "target": "Disposal",
+      "cls": "physical"
+    },
+    {
+      "id": "S27",
+      "description": "Purification filter cake",
+      "source": "UP9",
+      "target": "Disposal",
+      "cls": "physical"
+    },
+    {
+      "id": "S28",
+      "description": "Conditioned electrolyte",
+      "source": "UP9",
+      "target": "UP10",
+      "cls": "physical"
+    },
+    {
+      "id": "S29",
+      "description": "Cell gases",
+      "source": "UP10",
+      "target": "Vent",
+      "cls": "physical"
+    },
+    {
+      "id": "S30",
+      "description": "Spent electrolyte (parent)",
+      "source": "UP10",
+      "target": "split",
+      "cls": "parent - do NOT add with its branches"
+    },
+    {
+      "id": "S30R",
+      "description": "Spent electrolyte recycled",
+      "source": "UP10",
+      "target": "UP9",
+      "cls": "branch of S30"
+    },
+    {
+      "id": "S30P",
+      "description": "Spent electrolyte purge",
+      "source": "UP10",
+      "target": "UP11 neutralisation",
+      "cls": "branch of S30"
+    },
+    {
+      "id": "S31",
+      "description": "Crude Ga metal",
+      "source": "UP10",
+      "target": "UP11",
+      "cls": "physical"
+    },
+    {
+      "id": "S32",
+      "description": "HCl dose (100% HCl equivalent; V1 model basis)",
+      "source": "Reagent",
+      "target": "UP11",
+      "cls": "physical"
+    },
+    {
+      "id": "S33",
+      "description": "Spent acid and refining residues",
+      "source": "UP11",
+      "target": "Disposal",
+      "cls": "physical"
+    },
+    {
+      "id": "S34",
+      "description": "4N gallium product",
+      "source": "UP11",
+      "target": "Product",
+      "cls": "physical"
+    }
+  ],
+  "notes": [
+    "Stream IDs and routing originate in the supplied v3.4 stream register. Numeric snapshot values are not used."
+  ]
+}

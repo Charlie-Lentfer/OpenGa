@@ -1,0 +1,6 @@
+# Pinned to the versions the app was built and tested against.
+# pandas 3.0 requires Python 3.11+ — set that in Streamlit Cloud advanced settings.
+# See DEPLOY.md before relaxing these.
+streamlit==1.63.0
+pandas==3.0.2
+altair==6.2.2
